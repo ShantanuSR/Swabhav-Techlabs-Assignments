@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timesheet</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Timesheet</h1>
+        <p>Track your activities and productivity</p>
+      </div>
+      <form id="form">
+        <div class="form-group">
+          <label for="date">Select Date</label>
+          <input type="date" id="date" class="form-control" />
+        </div>
+
+        <div class="form-group">
+          <label for="on-leave">On Leave</label>
+          <div class="radio-group">
+            <input type="radio" name="on-leave" id="on-leave-yes" value="true" />
+            <label for="on-leave-yes">Yes</label>
+            <input type="radio" name="on-leave" id="on-leave-no" value="false" />
+            <label for="on-leave-no">No</label>
+          </div>
+        </div>
+
+        <div id="activity-container"></div>
+
+        <div class="btn-group">
+          <button type="button" id="add-activity" class="btn">Add Activity</button>
+          <button type="button" id="showData" class="showTimesheet">Show Data</button>
+          <button type="button" id="DeleteBtn" class="DeleteBtnClass">Delete By Id</button>
+          <input type="submit" value="Submit" class="btn submit-btn" />
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
